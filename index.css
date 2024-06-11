@@ -1,0 +1,79 @@
+#index.html,
+body {
+  background-color: #bdd9f2;
+}
+
+img {
+  width: 100%;
+}
+
+/*Mobile version*/
+.img_index {
+  width: 100%;
+  margin-left: 18px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.img_index {
+  position: relative;
+}
+
+.img_index img {
+  width: 100%;
+  height: auto;
+}
+/*billed karausel*/
+
+.mySlides {
+  display: none;
+}
+.img_index {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  /*   max-width: 1500px; */
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/* kasse der holder h1 overskrift */
+div.h1_container {
+  position: absolute;
+  bottom: 175px; /* Juster denne værdi for at ændre afstanden fra bunden */
+  left: 50%;
+  transform: translateX(-50%); /* Dette er den linje, der udfører den egentlige centreringshandling.*/
+  width: 600px;
+}
+/* selve overskriften */
+.h1_index {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 150;
+  color: #591c16;
+  padding: 20px; /* Juster polstring efter behov */
+  text-align: center;
+}
+/* desktop tilpasninger */
+@media (min-width: 768px) {
+  div.h1_container {
+    position: absolute;
+    top: 850px; /* Juster denne værdi for at ændre afstanden fra toppen */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+  }
+  .h1_index {
+    font-size: 77px; /* Juster størrelsen for større skærme */
+  }
+
+  .img_index {
+    width: 50%; /* Billedet fylder 50% af bredden på større skærme */
+    margin: 0 auto; /* Centrer billedet horisontalt */
+  }
+  .img_index {
+    vertical-align: middle;
+  }
+}
